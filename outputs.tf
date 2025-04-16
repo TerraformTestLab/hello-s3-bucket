@@ -28,3 +28,8 @@ output "s3_object_url" {
   description = "The URL of the uploaded JSON file in S3"
   value       = module.s3_upload.s3_object_url
 }
+
+output "last_modified" {
+  description = "The last modified time of the uploaded JSON file"
+  value       = timestamp()
+}

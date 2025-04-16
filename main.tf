@@ -15,6 +15,13 @@ terraform {
     }
   }
 
+   cloud { 
+    organization = "SujaysTerraformLab" 
+    workspaces { 
+      name = "hello-s3-bucket" 
+    } 
+  }
+
   required_version = ">= 1.9"
 }
 
