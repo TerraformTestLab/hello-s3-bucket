@@ -20,14 +20,13 @@ terraform {
 }
 
 locals {
-  tags = var.default_tags
   separator = "-"
 }
 
 provider "aws" {
   region = "ap-south-1"
   default_tags {
-    tags = local.tags
+    tags = var.default_tags
   }
 }
 
