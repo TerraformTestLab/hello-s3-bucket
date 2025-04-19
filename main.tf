@@ -4,6 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 5.0"
     }
+
     random = {
       source  = "hashicorp/random"
       version = "~> 3.0"
@@ -14,26 +15,14 @@ terraform {
       version = "~> 0.7"
     }
   }
-
-   cloud { 
-    organization = "SujaysTerraformLab" 
-    workspaces { 
-      name = "hello-s3-bucket" 
-    } 
-  }
-
+  
   required_version = ">= 1.9"
 }
 
 locals {
-  tags = {
-    CanDelete = "true"
-    CreatedBy = "Terraform"
-    Project   = "StacksModularizationTest"
-  }
+  tags = var.default_tags
   separator = "-"
 }
-
 
 provider "aws" {
   region = "ap-south-1"

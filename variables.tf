@@ -14,3 +14,13 @@ variable "force_destroy" {
   type        = bool
   default     = false
 }
+
+variable "default_tags" {
+  description = "Default tags to be applied to all resources"
+  type        = map(string)
+  default     = {
+    CanDelete = "true"
+    CreatedBy = "Terraform"
+    Project   = "StacksModularizationTest"
+  }
+}

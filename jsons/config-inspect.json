@@ -1,0 +1,195 @@
+{
+  "path": ".",
+  "variables": {
+    "bucket_name_prefix": {
+      "name": "bucket_name_prefix",
+      "type": "string",
+      "description": "Prefix for the S3 bucket name",
+      "default": null,
+      "required": true,
+      "pos": {
+        "filename": "variables.tf",
+        "line": 7
+      }
+    },
+    "enaable_versioning": {
+      "name": "enaable_versioning",
+      "type": "bool",
+      "description": "Enable versioning for the S3 bucket",
+      "default": false,
+      "required": false,
+      "pos": {
+        "filename": "variables.tf",
+        "line": 1
+      }
+    },
+    "force_destroy": {
+      "name": "force_destroy",
+      "type": "bool",
+      "description": "Force destroy the S3 bucket",
+      "default": false,
+      "required": false,
+      "pos": {
+        "filename": "variables.tf",
+        "line": 12
+      }
+    }
+  },
+  "outputs": {
+    "aws_availability_zones": {
+      "name": "aws_availability_zones",
+      "description": "The list of availability zones",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 22
+      }
+    },
+    "last_modified": {
+      "name": "last_modified",
+      "description": "The last modified time of the uploaded JSON file",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 32
+      }
+    },
+    "s3_bucket_arn": {
+      "name": "s3_bucket_arn",
+      "description": "The ARN of the S3 bucket",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 1
+      }
+    },
+    "s3_bucket_domain_name": {
+      "name": "s3_bucket_domain_name",
+      "description": "The domain name of the S3 bucket",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 12
+      }
+    },
+    "s3_bucket_id": {
+      "name": "s3_bucket_id",
+      "description": "The name of the S3 bucket",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 6
+      }
+    },
+    "s3_bucket_region": {
+      "name": "s3_bucket_region",
+      "description": "The region of the S3 bucket",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 17
+      }
+    },
+    "s3_object_url": {
+      "name": "s3_object_url",
+      "description": "The URL of the uploaded JSON file in S3",
+      "pos": {
+        "filename": "outputs.tf",
+        "line": 27
+      }
+    }
+  },
+  "required_core": [
+    ">= 1.9"
+  ],
+  "required_providers": {
+    "aws": {
+      "source": "hashicorp/aws",
+      "version_constraints": [
+        "~> 5.0"
+      ]
+    },
+    "local": {},
+    "random": {
+      "source": "hashicorp/random",
+      "version_constraints": [
+        "~> 3.0"
+      ]
+    },
+    "time": {
+      "source": "hashicorp/time",
+      "version_constraints": [
+        "~> 0.7"
+      ]
+    }
+  },
+  "provider_configs": {
+    "aws": {
+      "name": "aws"
+    }
+  },
+  "managed_resources": {
+    "local_file.json_file": {
+      "mode": "managed",
+      "type": "local_file",
+      "name": "json_file",
+      "provider": {
+        "name": "local"
+      },
+      "pos": {
+        "filename": "main.tf",
+        "line": 65
+      }
+    },
+    "random_pet.bucket-name": {
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "bucket-name",
+      "provider": {
+        "name": "random"
+      },
+      "pos": {
+        "filename": "main.tf",
+        "line": 47
+      }
+    },
+    "time_static.current_time": {
+      "mode": "managed",
+      "type": "time_static",
+      "name": "current_time",
+      "provider": {
+        "name": "time"
+      },
+      "pos": {
+        "filename": "main.tf",
+        "line": 53
+      }
+    }
+  },
+  "data_resources": {
+    "data.aws_availability_zones.available": {
+      "mode": "data",
+      "type": "aws_availability_zones",
+      "name": "available",
+      "provider": {
+        "name": "aws"
+      },
+      "pos": {
+        "filename": "main.tf",
+        "line": 45
+      }
+    }
+  },
+  "module_calls": {
+    "s3-bucket": {
+      "name": "s3-bucket",
+      "source": "terraform-aws-modules/s3-bucket/aws",
+      "pos": {
+        "filename": "main.tf",
+        "line": 55
+      }
+    },
+    "s3_upload": {
+      "name": "s3_upload",
+      "source": "./modules/s3_upload",
+      "pos": {
+        "filename": "main.tf",
+        "line": 74
+      }
+    }
+  }
+}

@@ -1,0 +1,3589 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "module.root",
+        "label": "module.root",
+        "type": "module"
+      },
+      "classes": [
+        "module"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_id",
+        "parent": "module.root",
+        "label": "output.s3_bucket_id",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_object_url",
+        "parent": "module.root",
+        "label": "output.s3_object_url",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.data.aws_availability_zones.available",
+        "parent": "module.root",
+        "label": "data.aws_availability_zones.available",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.local_file.json_file",
+        "parent": "module.root",
+        "label": "local_file.json_file",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload",
+        "parent": "module.root",
+        "label": "module.s3_upload",
+        "type": "module",
+        "parentModuleID": "module.root"
+      },
+      "classes": [
+        "module"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.var.timestamp",
+        "parent": "module.root.module.s3_upload",
+        "label": "var.timestamp",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.output.s3_object_url",
+        "parent": "module.root.module.s3_upload",
+        "label": "output.s3_object_url",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.aws_s3_object.upload_json",
+        "parent": "module.root.module.s3_upload",
+        "label": "aws_s3_object.upload_json",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.var.bucket_name",
+        "parent": "module.root.module.s3_upload",
+        "label": "var.bucket_name",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.var.json_file_path",
+        "parent": "module.root.module.s3_upload",
+        "label": "var.json_file_path",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.var.force_destroy",
+        "parent": "module.root",
+        "label": "var.force_destroy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket",
+        "parent": "module.root",
+        "label": "module.s3-bucket",
+        "type": "module",
+        "parentModuleID": "module.root"
+      },
+      "classes": [
+        "module"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_policy.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.object_lock_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.object_lock_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_access_log_delivery_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_access_log_delivery_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.inventory_self_source_destination",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.inventory_self_source_destination",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.object_lock_enabled",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.object_lock_enabled",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_require_latest_tls_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_require_latest_tls_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_website_endpoint",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_website_endpoint",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.tags",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.tags",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_region",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_region",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_caller_identity.current",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_caller_identity.current",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_analytics_destination_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_analytics_destination_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.cors_rule",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.cors_rule",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_public_access_block.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.acceleration_status",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.acceleration_status",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.inventory_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.inventory_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.cors_rules",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.cors_rules",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_deny_incorrect_encryption_headers",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_deny_incorrect_encryption_headers",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.inventory_source_account_id",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.inventory_source_account_id",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_website_domain",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_website_domain",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_intelligent_tiering_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_intelligent_tiering_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.require_latest_tls",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.owner",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.owner",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.replication_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.replication_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.analytics_source_account_id",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.analytics_source_account_id",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_hosted_zone_id",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_hosted_zone_id",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_lifecycle_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.expected_bucket_owner",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.bucket",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.bucket",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_deny_insecure_transport_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_deny_insecure_transport_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_directory_bucket.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_region.current",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_region.current",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_bucket_domain_name",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_inventory.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_inventory.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.attach_policy",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_deny_ssec_encrypted_object_uploads",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_deny_ssec_encrypted_object_uploads",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.website",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.website",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.inventory_source_bucket_arn",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.inventory_source_bucket_arn",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.create_bucket",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.create_bucket",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_metric.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_metric.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_partition.current",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_partition.current",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.request_payer",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.request_payer",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.analytics_source_bucket_arn",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.analytics_source_bucket_arn",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_ownership_controls.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_directory_bucket_name",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_directory_bucket_name",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_id",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_id",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_lifecycle_configuration_rules",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_lifecycle_configuration_rules",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.deny_insecure_transport",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.ignore_public_acls",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.ignore_public_acls",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.versioning",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.versioning",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_arn",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_arn",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.object_ownership",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.object_ownership",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.grant",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.grant",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.server_side_encryption_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.server_side_encryption_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.putin_khuylo",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.putin_khuylo",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_analytics_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.create_bucket",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.lifecycle_rules",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.lifecycle_rules",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.elb_service_accounts",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.elb_service_accounts",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.access_log_delivery_policy_source_accounts",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.access_log_delivery_policy_source_accounts",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_inventory_destination_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_inventory_destination_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.grants",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.grants",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.intelligent_tiering",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.intelligent_tiering",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.location_type",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.location_type",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.type",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.type",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.lb_log_delivery",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.control_object_ownership",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.control_object_ownership",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_deny_incorrect_kms_key_sse",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_deny_incorrect_kms_key_sse",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.elb_log_delivery",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.block_public_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.block_public_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.access_log_delivery_policy_source_buckets",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.access_log_delivery_policy_source_buckets",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_replication_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_replication_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_directory_bucket_arn",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_directory_bucket_arn",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.availability_zone_id",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.availability_zone_id",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.analytics_self_source_destination",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.analytics_self_source_destination",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.force_destroy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.force_destroy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.metric_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.metric_configuration",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.block_public_acls",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.block_public_acls",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_cors_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.bucket_prefix",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.bucket_prefix",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.lifecycle_rule",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.lifecycle_rule",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_elb_log_delivery_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_elb_log_delivery_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_server_side_encryption_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_website_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_public_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_public_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.is_directory_bucket",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.is_directory_bucket",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.logging",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.logging",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.allowed_kms_key_arn",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.allowed_kms_key_arn",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_accelerate_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_request_payment_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.intelligent_tiering",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.intelligent_tiering",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.restrict_public_buckets",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.restrict_public_buckets",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_deny_unencrypted_object_uploads",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_deny_unencrypted_object_uploads",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.metric_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.metric_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_logging.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_logging.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_object_lock_configuration.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_versioning.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_policy",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.data_redundancy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.data_redundancy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.attach_lb_log_delivery_policy",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.attach_lb_log_delivery_policy",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.analytics_configuration",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.analytics_configuration",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.transition_default_minimum_object_size",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.transition_default_minimum_object_size",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_bucket_regional_domain_name",
+        "parent": "module.root.module.s3-bucket",
+        "label": "output.s3_bucket_bucket_regional_domain_name",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_canonical_user_id.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.combined",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_acl.this",
+        "parent": "module.root.module.s3-bucket",
+        "label": "aws_s3_bucket_acl.this",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "parent": "module.root.module.s3-bucket",
+        "label": "data.aws_iam_policy_document.access_log_delivery",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket_acl",
+        "parent": "module.root.module.s3-bucket",
+        "label": "local.create_bucket_acl",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.acl",
+        "parent": "module.root.module.s3-bucket",
+        "label": "var.acl",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.time_static.current_time",
+        "parent": "module.root",
+        "label": "time_static.current_time",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.local.separator",
+        "parent": "module.root",
+        "label": "local.separator",
+        "type": "local"
+      },
+      "classes": [
+        "local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.random_pet.bucket-name",
+        "parent": "module.root",
+        "label": "random_pet.bucket-name",
+        "type": "resource"
+      },
+      "classes": [
+        "resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_domain_name",
+        "parent": "module.root",
+        "label": "output.s3_bucket_domain_name",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_region",
+        "parent": "module.root",
+        "label": "output.s3_bucket_region",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.var.bucket_name_prefix",
+        "parent": "module.root",
+        "label": "var.bucket_name_prefix",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.var.enaable_versioning",
+        "parent": "module.root",
+        "label": "var.enaable_versioning",
+        "type": "var"
+      },
+      "classes": [
+        "var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.aws_availability_zones",
+        "parent": "module.root",
+        "label": "output.aws_availability_zones",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_arn",
+        "parent": "module.root",
+        "label": "output.s3_bucket_arn",
+        "type": "output"
+      },
+      "classes": [
+        "output"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "id": "module.root.local_file.json_file-module.root.module.s3-bucket.output.s3_bucket_arn",
+        "source": "module.root.local_file.json_file",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_arn",
+        "sourceType": "resource",
+        "targetType": "output"
+      },
+      "classes": [
+        "resource-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.local_file.json_file-module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "source": "module.root.local_file.json_file",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "sourceType": "resource",
+        "targetType": "output"
+      },
+      "classes": [
+        "resource-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.local_file.json_file-module.root.time_static.current_time",
+        "source": "module.root.local_file.json_file",
+        "target": "module.root.time_static.current_time",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.local.create_bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.local.create_bucket",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.bucket",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.bucket_prefix",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.bucket_prefix",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.force_destroy",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.force_destroy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.is_directory_bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.is_directory_bucket",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.object_lock_enabled",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.object_lock_enabled",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket.this-module.root.module.s3-bucket.var.tags",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "target": "module.root.module.s3-bucket.var.tags",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this-module.root.module.s3-bucket.var.acceleration_status",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this",
+        "target": "module.root.module.s3-bucket.var.acceleration_status",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_accelerate_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_acl.this-module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_acl.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_acl.this-module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_acl.this",
+        "target": "module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_acl.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_acl.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this-module.root.module.s3-bucket.data.aws_caller_identity.current",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this",
+        "target": "module.root.module.s3-bucket.data.aws_caller_identity.current",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this-module.root.module.s3-bucket.var.analytics_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_analytics_configuration.this",
+        "target": "module.root.module.s3-bucket.var.analytics_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this-module.root.module.s3-bucket.local.cors_rules",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this",
+        "target": "module.root.module.s3-bucket.local.cors_rules",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_cors_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_intelligent_tiering_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_intelligent_tiering_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_intelligent_tiering_configuration.this-module.root.module.s3-bucket.local.intelligent_tiering",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_intelligent_tiering_configuration.this",
+        "target": "module.root.module.s3-bucket.local.intelligent_tiering",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_inventory.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_inventory.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_inventory.this-module.root.module.s3-bucket.var.inventory_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_inventory.this",
+        "target": "module.root.module.s3-bucket.var.inventory_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this-module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this-module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this-module.root.module.s3-bucket.local.lifecycle_rules",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "target": "module.root.module.s3-bucket.local.lifecycle_rules",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this-module.root.module.s3-bucket.var.transition_default_minimum_object_size",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "target": "module.root.module.s3-bucket.var.transition_default_minimum_object_size",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_logging.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_logging.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_logging.this-module.root.module.s3-bucket.var.logging",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_logging.this",
+        "target": "module.root.module.s3-bucket.var.logging",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_metric.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_metric.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_metric.this-module.root.module.s3-bucket.local.metric_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_metric.this",
+        "target": "module.root.module.s3-bucket.local.metric_configuration",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this-module.root.module.s3-bucket.var.object_lock_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_object_lock_configuration.this",
+        "target": "module.root.module.s3-bucket.var.object_lock_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this-module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this-module.root.module.s3-bucket.var.control_object_ownership",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "target": "module.root.module.s3-bucket.var.control_object_ownership",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this-module.root.module.s3-bucket.var.object_ownership",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_ownership_controls.this",
+        "target": "module.root.module.s3-bucket.var.object_ownership",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_policy.this-module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_policy.this-module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "target": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_policy.this-module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.var.attach_public_policy",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.var.attach_public_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.var.block_public_acls",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.var.block_public_acls",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.var.block_public_policy",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.var.block_public_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.var.ignore_public_acls",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.var.ignore_public_acls",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this-module.root.module.s3-bucket.var.restrict_public_buckets",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_public_access_block.this",
+        "target": "module.root.module.s3-bucket.var.restrict_public_buckets",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_replication_configuration.this-module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_replication_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_replication_configuration.this-module.root.module.s3-bucket.var.replication_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_replication_configuration.this",
+        "target": "module.root.module.s3-bucket.var.replication_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this-module.root.module.s3-bucket.var.request_payer",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_request_payment_configuration.this",
+        "target": "module.root.module.s3-bucket.var.request_payer",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this-module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this-module.root.module.s3-bucket.var.server_side_encryption_configuration",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_server_side_encryption_configuration.this",
+        "target": "module.root.module.s3-bucket.var.server_side_encryption_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this-module.root.module.s3-bucket.var.versioning",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_versioning.this",
+        "target": "module.root.module.s3-bucket.var.versioning",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this-module.root.module.s3-bucket.var.expected_bucket_owner",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "target": "module.root.module.s3-bucket.var.expected_bucket_owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this-module.root.module.s3-bucket.var.website",
+        "source": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "target": "module.root.module.s3-bucket.var.website",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.local.create_bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.local.create_bucket",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.availability_zone_id",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.availability_zone_id",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.bucket",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.data_redundancy",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.data_redundancy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.force_destroy",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.force_destroy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.is_directory_bucket",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.is_directory_bucket",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.location_type",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.location_type",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.aws_s3_directory_bucket.this-module.root.module.s3-bucket.var.type",
+        "source": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "target": "module.root.module.s3-bucket.var.type",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_canonical_user_id.this-module.root.module.s3-bucket.local.create_bucket",
+        "source": "module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "target": "module.root.module.s3-bucket.local.create_bucket",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_canonical_user_id.this-module.root.module.s3-bucket.local.create_bucket_acl",
+        "source": "module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "target": "module.root.module.s3-bucket.local.create_bucket_acl",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_canonical_user_id.this-module.root.module.s3-bucket.var.owner",
+        "source": "module.root.module.s3-bucket.data.aws_canonical_user_id.this",
+        "target": "module.root.module.s3-bucket.var.owner",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery-module.root.module.s3-bucket.var.access_log_delivery_policy_source_accounts",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "target": "module.root.module.s3-bucket.var.access_log_delivery_policy_source_accounts",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery-module.root.module.s3-bucket.var.access_log_delivery_policy_source_buckets",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "target": "module.root.module.s3-bucket.var.access_log_delivery_policy_source_buckets",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery-module.root.module.s3-bucket.var.attach_access_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "target": "module.root.module.s3-bucket.var.attach_access_log_delivery_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.access_log_delivery",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.local.attach_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.local.attach_policy",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined-module.root.module.s3-bucket.var.policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.combined",
+        "target": "module.root.module.s3-bucket.var.policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers-module.root.module.s3-bucket.var.attach_deny_incorrect_encryption_headers",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "target": "module.root.module.s3-bucket.var.attach_deny_incorrect_encryption_headers",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers-module.root.module.s3-bucket.var.server_side_encryption_configuration",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_encryption_headers",
+        "target": "module.root.module.s3-bucket.var.server_side_encryption_configuration",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse-module.root.module.s3-bucket.var.allowed_kms_key_arn",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "target": "module.root.module.s3-bucket.var.allowed_kms_key_arn",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse-module.root.module.s3-bucket.var.attach_deny_incorrect_kms_key_sse",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_incorrect_kms_key_sse",
+        "target": "module.root.module.s3-bucket.var.attach_deny_incorrect_kms_key_sse",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport-module.root.module.s3-bucket.var.attach_deny_insecure_transport_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_insecure_transport",
+        "target": "module.root.module.s3-bucket.var.attach_deny_insecure_transport_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads-module.root.module.s3-bucket.var.attach_deny_ssec_encrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_ssec_encrypted_object_uploads",
+        "target": "module.root.module.s3-bucket.var.attach_deny_ssec_encrypted_object_uploads",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads-module.root.module.s3-bucket.var.attach_deny_unencrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.deny_unencrypted_object_uploads",
+        "target": "module.root.module.s3-bucket.var.attach_deny_unencrypted_object_uploads",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery-module.root.module.s3-bucket.data.aws_partition.current",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "target": "module.root.module.s3-bucket.data.aws_partition.current",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery-module.root.module.s3-bucket.data.aws_region.current",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "target": "module.root.module.s3-bucket.data.aws_region.current",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery-module.root.module.s3-bucket.local.elb_service_accounts",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "target": "module.root.module.s3-bucket.local.elb_service_accounts",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery-module.root.module.s3-bucket.var.attach_elb_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.elb_log_delivery",
+        "target": "module.root.module.s3-bucket.var.attach_elb_log_delivery_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.data.aws_caller_identity.current",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.data.aws_caller_identity.current",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.analytics_self_source_destination",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.analytics_self_source_destination",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.analytics_source_account_id",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.analytics_source_account_id",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.analytics_source_bucket_arn",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.analytics_source_bucket_arn",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.attach_analytics_destination_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.attach_analytics_destination_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.attach_inventory_destination_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.attach_inventory_destination_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.inventory_self_source_destination",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.inventory_self_source_destination",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.inventory_source_account_id",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.inventory_source_account_id",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy-module.root.module.s3-bucket.var.inventory_source_bucket_arn",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.inventory_and_analytics_destination_policy",
+        "target": "module.root.module.s3-bucket.var.inventory_source_bucket_arn",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery-module.root.module.s3-bucket.var.attach_lb_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.lb_log_delivery",
+        "target": "module.root.module.s3-bucket.var.attach_lb_log_delivery_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "resource",
+        "targetType": "resource"
+      },
+      "classes": [
+        "resource-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls-module.root.module.s3-bucket.var.attach_require_latest_tls_policy",
+        "source": "module.root.module.s3-bucket.data.aws_iam_policy_document.require_latest_tls",
+        "target": "module.root.module.s3-bucket.var.attach_require_latest_tls_policy",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_access_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_access_log_delivery_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_deny_incorrect_encryption_headers",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_deny_incorrect_encryption_headers",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_deny_incorrect_kms_key_sse",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_deny_incorrect_kms_key_sse",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_deny_insecure_transport_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_deny_insecure_transport_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_deny_ssec_encrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_deny_ssec_encrypted_object_uploads",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_deny_unencrypted_object_uploads",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_deny_unencrypted_object_uploads",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_elb_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_elb_log_delivery_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_inventory_destination_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_inventory_destination_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_lb_log_delivery_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_lb_log_delivery_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.attach_policy-module.root.module.s3-bucket.var.attach_require_latest_tls_policy",
+        "source": "module.root.module.s3-bucket.local.attach_policy",
+        "target": "module.root.module.s3-bucket.var.attach_require_latest_tls_policy",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.cors_rules-module.root.module.s3-bucket.var.cors_rule",
+        "source": "module.root.module.s3-bucket.local.cors_rules",
+        "target": "module.root.module.s3-bucket.var.cors_rule",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket-module.root.module.s3-bucket.var.create_bucket",
+        "source": "module.root.module.s3-bucket.local.create_bucket",
+        "target": "module.root.module.s3-bucket.var.create_bucket",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket-module.root.module.s3-bucket.var.putin_khuylo",
+        "source": "module.root.module.s3-bucket.local.create_bucket",
+        "target": "module.root.module.s3-bucket.var.putin_khuylo",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket_acl-module.root.module.s3-bucket.local.grants",
+        "source": "module.root.module.s3-bucket.local.create_bucket_acl",
+        "target": "module.root.module.s3-bucket.local.grants",
+        "sourceType": "local",
+        "targetType": "local"
+      },
+      "classes": [
+        "local-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.create_bucket_acl-module.root.module.s3-bucket.var.acl",
+        "source": "module.root.module.s3-bucket.local.create_bucket_acl",
+        "target": "module.root.module.s3-bucket.var.acl",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.grants-module.root.module.s3-bucket.var.grant",
+        "source": "module.root.module.s3-bucket.local.grants",
+        "target": "module.root.module.s3-bucket.var.grant",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.intelligent_tiering-module.root.module.s3-bucket.var.intelligent_tiering",
+        "source": "module.root.module.s3-bucket.local.intelligent_tiering",
+        "target": "module.root.module.s3-bucket.var.intelligent_tiering",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.lifecycle_rules-module.root.module.s3-bucket.var.lifecycle_rule",
+        "source": "module.root.module.s3-bucket.local.lifecycle_rules",
+        "target": "module.root.module.s3-bucket.var.lifecycle_rule",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.local.metric_configuration-module.root.module.s3-bucket.var.metric_configuration",
+        "source": "module.root.module.s3-bucket.local.metric_configuration",
+        "target": "module.root.module.s3-bucket.var.metric_configuration",
+        "sourceType": "local",
+        "targetType": "var"
+      },
+      "classes": [
+        "local-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_arn-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_arn",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_bucket_regional_domain_name-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_bucket_regional_domain_name",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_hosted_zone_id-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_hosted_zone_id",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_id-module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_id",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_lifecycle_configuration_rules-module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_lifecycle_configuration_rules",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_lifecycle_configuration.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_policy-module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_policy",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_policy.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_region-module.root.module.s3-bucket.aws_s3_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_region",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_website_domain-module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_website_domain",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_bucket_website_endpoint-module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "source": "module.root.module.s3-bucket.output.s3_bucket_website_endpoint",
+        "target": "module.root.module.s3-bucket.aws_s3_bucket_website_configuration.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_directory_bucket_arn-module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_directory_bucket_arn",
+        "target": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.output.s3_directory_bucket_name-module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "source": "module.root.module.s3-bucket.output.s3_directory_bucket_name",
+        "target": "module.root.module.s3-bucket.aws_s3_directory_bucket.this",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.availability_zone_id-module.root.data.aws_availability_zones.available",
+        "source": "module.root.module.s3-bucket.var.availability_zone_id",
+        "target": "module.root.data.aws_availability_zones.available",
+        "sourceType": "var",
+        "targetType": "resource"
+      },
+      "classes": [
+        "var-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.bucket-module.root.random_pet.bucket-name",
+        "source": "module.root.module.s3-bucket.var.bucket",
+        "target": "module.root.random_pet.bucket-name",
+        "sourceType": "var",
+        "targetType": "resource"
+      },
+      "classes": [
+        "var-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.force_destroy-module.root.var.force_destroy",
+        "source": "module.root.module.s3-bucket.var.force_destroy",
+        "target": "module.root.var.force_destroy",
+        "sourceType": "var",
+        "targetType": "var"
+      },
+      "classes": [
+        "var-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3-bucket.var.versioning-module.root.var.enaable_versioning",
+        "source": "module.root.module.s3-bucket.var.versioning",
+        "target": "module.root.var.enaable_versioning",
+        "sourceType": "var",
+        "targetType": "var"
+      },
+      "classes": [
+        "var-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.aws_s3_object.upload_json-module.root.module.s3_upload.var.bucket_name",
+        "source": "module.root.module.s3_upload.aws_s3_object.upload_json",
+        "target": "module.root.module.s3_upload.var.bucket_name",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.aws_s3_object.upload_json-module.root.module.s3_upload.var.json_file_path",
+        "source": "module.root.module.s3_upload.aws_s3_object.upload_json",
+        "target": "module.root.module.s3_upload.var.json_file_path",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.aws_s3_object.upload_json-module.root.module.s3_upload.var.timestamp",
+        "source": "module.root.module.s3_upload.aws_s3_object.upload_json",
+        "target": "module.root.module.s3_upload.var.timestamp",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.output.s3_object_url-module.root.module.s3_upload.aws_s3_object.upload_json",
+        "source": "module.root.module.s3_upload.output.s3_object_url",
+        "target": "module.root.module.s3_upload.aws_s3_object.upload_json",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.var.bucket_name-module.root.module.s3-bucket.output.s3_bucket_id",
+        "source": "module.root.module.s3_upload.var.bucket_name",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_id",
+        "sourceType": "var",
+        "targetType": "output"
+      },
+      "classes": [
+        "var-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.module.s3_upload.var.timestamp-module.root.time_static.current_time",
+        "source": "module.root.module.s3_upload.var.timestamp",
+        "target": "module.root.time_static.current_time",
+        "sourceType": "var",
+        "targetType": "resource"
+      },
+      "classes": [
+        "var-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.aws_availability_zones-module.root.data.aws_availability_zones.available",
+        "source": "module.root.output.aws_availability_zones",
+        "target": "module.root.data.aws_availability_zones.available",
+        "sourceType": "output",
+        "targetType": "resource"
+      },
+      "classes": [
+        "output-resource"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_arn-module.root.module.s3-bucket.output.s3_bucket_arn",
+        "source": "module.root.output.s3_bucket_arn",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_arn",
+        "sourceType": "output",
+        "targetType": "output"
+      },
+      "classes": [
+        "output-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_domain_name-module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "source": "module.root.output.s3_bucket_domain_name",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_bucket_domain_name",
+        "sourceType": "output",
+        "targetType": "output"
+      },
+      "classes": [
+        "output-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_id-module.root.module.s3-bucket.output.s3_bucket_id",
+        "source": "module.root.output.s3_bucket_id",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_id",
+        "sourceType": "output",
+        "targetType": "output"
+      },
+      "classes": [
+        "output-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_bucket_region-module.root.module.s3-bucket.output.s3_bucket_region",
+        "source": "module.root.output.s3_bucket_region",
+        "target": "module.root.module.s3-bucket.output.s3_bucket_region",
+        "sourceType": "output",
+        "targetType": "output"
+      },
+      "classes": [
+        "output-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.output.s3_object_url-module.root.module.s3_upload.output.s3_object_url",
+        "source": "module.root.output.s3_object_url",
+        "target": "module.root.module.s3_upload.output.s3_object_url",
+        "sourceType": "output",
+        "targetType": "output"
+      },
+      "classes": [
+        "output-output"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.random_pet.bucket-name-module.root.local.separator",
+        "source": "module.root.random_pet.bucket-name",
+        "target": "module.root.local.separator",
+        "sourceType": "resource",
+        "targetType": "local"
+      },
+      "classes": [
+        "resource-local"
+      ]
+    },
+    {
+      "data": {
+        "id": "module.root.random_pet.bucket-name-module.root.var.bucket_name_prefix",
+        "source": "module.root.random_pet.bucket-name",
+        "target": "module.root.var.bucket_name_prefix",
+        "sourceType": "resource",
+        "targetType": "var"
+      },
+      "classes": [
+        "resource-var"
+      ]
+    }
+  ]
+}
