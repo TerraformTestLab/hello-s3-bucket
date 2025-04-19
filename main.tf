@@ -16,15 +16,15 @@ terraform {
     }
   }
 
-  cloud { 
-    organization = "SujaysTerraformLab" 
-    workspaces { 
+  cloud {
+    organization = "SujaysTerraformLab"
+    workspaces {
       tags = {
         project-name = "hello-s3-bucket"
       }
-    } 
-  } 
-  
+    }
+  }
+
   required_version = ">= 1.9"
 }
 
@@ -57,6 +57,13 @@ module "s3-bucket" {
     enabled = var.enaable_versioning
   }
   force_destroy = var.force_destroy
+  tags = merge(
+    var.default_tags,
+    {
+      Name      = "S3 Bucket ${random_pet.bucket-name.id}"
+      Timestamp = timestamp()
+    }
+  )
 }
 
 resource "local_file" "json_file" {
