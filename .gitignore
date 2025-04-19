@@ -38,4 +38,4 @@ terraform.rc
 .idea
 .vscode
 states
-!terraform.tfvars
+!terraform-*.tfvars
