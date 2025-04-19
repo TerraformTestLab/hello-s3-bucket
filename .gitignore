@@ -38,6 +38,8 @@ terraform.rc
 .idea
 .vscode
 states
-!terraform-*.tfvars
 api-driven-workflow
 .DS_Store
+!terraform.tfvars
+!vcs.auto.tfvars
+!cli-workspace.tfvars
