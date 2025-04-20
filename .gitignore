@@ -39,6 +39,7 @@ terraform.rc
 .vscode
 states
 api-driven-workflow
+vcs-driven-workflow
 .DS_Store
 !terraform.tfvars
 !vcs.auto.tfvars
