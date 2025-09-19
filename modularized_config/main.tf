@@ -16,15 +16,6 @@ terraform {
     }
   }
 
-  # cloud {
-  #   organization = "SujaysTerraformLab"
-  #   workspaces {
-  #     tags = {
-  #       project-name = "hello-s3-bucket"
-  #     }
-  #   }
-  # }
-
   required_version = ">= 1.9"
 }
 

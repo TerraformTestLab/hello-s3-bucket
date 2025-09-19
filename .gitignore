@@ -44,3 +44,4 @@ vcs-driven-workflow
 !terraform.tfvars
 !vcs.auto.tfvars
 !cli-workspace.tfvars
+modularized_config-*
