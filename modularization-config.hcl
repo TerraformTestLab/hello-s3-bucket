@@ -1,2 +1,2 @@
-organization_name = "SujaysTerraformLab"
-workspaces = ["hello-s3-bucket-VCS"] # https://app.terraform.io/app/SujaysTerraformLab/workspaces/hello-s3-bucket-VCS
+organization_name = "SujaysTerraformLab" # Name of your Terraform Cloud organization under which the workspaces to migrated exists
+workspaces = ["hello-s3-bucket-VCS"] # https://app.terraform.io/app/SujaysTerraformLab/workspaces/hello-s3-bucket-VCS # List of workspaces associtaed with the Terraform configuration to be migrated to stacks
