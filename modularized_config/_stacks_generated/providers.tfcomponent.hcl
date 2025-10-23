@@ -5,12 +5,14 @@ required_providers {
     source  = "hashicorp/aws"
     version = ">= 6.5.0"
   }
-
+  local = {
+    source  = "hashicorp/local"
+    version = "2.5.3"
+  }
   random = {
     source  = "hashicorp/random"
     version = "~> 3.0"
   }
-
   time = {
     source  = "hashicorp/time"
     version = "~> 0.7"
@@ -23,6 +25,8 @@ provider "aws" "this" {
   }
 }
 
+provider "local" "this" {
+}
 provider "random" "this" {
 }
 provider "time" "this" {

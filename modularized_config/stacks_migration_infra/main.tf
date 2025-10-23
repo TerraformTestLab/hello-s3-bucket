@@ -23,7 +23,7 @@ resource "tfe_project" "stack_project" {
 
 resource "tfe_stack" "stack" {
   name         = var.stack_name
-  project_id   =  tfe_project.stack_project.id
+  project_id   = tfe_project.stack_project.id
 }
 
 resource "tfmigrate_stack_migration" "stack_migration" {

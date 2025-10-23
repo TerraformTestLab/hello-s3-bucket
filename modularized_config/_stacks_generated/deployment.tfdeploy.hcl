@@ -12,9 +12,9 @@ deployment "hello-s3-bucket-VCS-deployment" {
       CreatedBy = "Terraform"
       Project   = "StacksModularizationTest"
     }
-    enaable_versioning = null # tf-migrate could not associate a value for this variable, adding nil PLACEHOLDER and this has to be set manually before execute
-    bucket_name_prefix = null # tf-migrate could not associate a value for this variable, adding nil PLACEHOLDER and this has to be set manually before execute
-    force_destroy      = null # tf-migrate could not associate a value for this variable, adding nil PLACEHOLDER and this has to be set manually before execute
+    enaable_versioning = true
+    bucket_name_prefix = "stacksmodtest"
+    force_destroy      = true
   }
   import = true
 }

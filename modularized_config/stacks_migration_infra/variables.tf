@@ -7,7 +7,7 @@ variable "tfe_hostname" {
 }
 
 variable "project_name" {
-  default = "example-project"
+  default = "terraform-transformer"
 }
 
 variable "stack_name" {

@@ -28,8 +28,8 @@ provider "aws" {
 
 module "terraform_module" {
   source             = "./terraform_modules"
-  default_tags       = var.default_tags
   enaable_versioning = var.enaable_versioning
   bucket_name_prefix = var.bucket_name_prefix
   force_destroy      = var.force_destroy
+  default_tags       = var.default_tags
 }

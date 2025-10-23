@@ -1,12 +1,3 @@
-variable "default_tags" {
-  description = "Default tags to be applied to all resources"
-  type        = map(string)
-  default = {
-    CanDelete = "true"
-    CreatedBy = "Terraform"
-    Project   = "StacksModularizationTest"
-  }
-}
 variable "enaable_versioning" {
   description = "Enable versioning for the S3 bucket"
   type        = bool
@@ -22,3 +13,12 @@ variable "force_destroy" {
   type        = bool
 }
 
+variable "default_tags" {
+  description = "Default tags to be applied to all resources"
+  type        = map(string)
+  default = {
+    CanDelete = "true"
+    CreatedBy = "Terraform"
+    Project   = "StacksModularizationTest"
+  }
+}
